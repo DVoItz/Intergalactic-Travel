@@ -9,7 +9,10 @@
 import UIKit
 
 class ImageViewController: UIViewController {
+    
+    var isBlueStar:Bool?
 
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

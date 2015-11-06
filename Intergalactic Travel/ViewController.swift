@@ -12,14 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //ImageViewController.image = UIImage(named: "bluestar")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nextViewcontroller = segue.destinationViewController as!ImageViewController
+        nextViewcontroller.isBlueStar = true
+        nextViewcontroller.title = sender?.currentTitle
     }
-
-
 }
+
 
