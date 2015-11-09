@@ -21,14 +21,14 @@
                                 <rect key="frame" x="334" y="512" width="100" height="23"/>
                                 <state key="normal" title="Visit Blue Star"/>
                                 <connections>
-                                    <segue destination="dNp-vY-kSq" kind="show" id="l5o-hS-Xwa"/>
+                                    <segue destination="dNp-vY-kSq" kind="show" identifier="blueStarSegue" id="l5o-hS-Xwa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpS-EM-OUI">
                                 <rect key="frame" x="331" y="459" width="106" height="30"/>
                                 <state key="normal" title="Visit Red Dwarf"/>
                                 <connections>
-                                    <segue destination="dNp-vY-kSq" kind="show" id="f7t-j7-Zlk"/>
+                                    <segue destination="dNp-vY-kSq" kind="show" identifier="redDwarfSegue" id="f7t-j7-Zlk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,14 +53,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-Ii-HPN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GcV-Dt-uGP">
                                 <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="image" destination="4cF-Ii-HPN" id="bxm-M5-EC1"/>
+                        <outlet property="imageStar" destination="GcV-Dt-uGP" id="PdN-8z-xwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLh-55-EuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,6 +87,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l5o-hS-Xwa"/>
+        <segue reference="f7t-j7-Zlk"/>
     </inferredMetricsTieBreakers>
 </document>

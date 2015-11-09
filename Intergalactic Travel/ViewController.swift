@@ -12,12 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //ImageViewController.image = UIImage(named: "bluestar")
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let nextViewcontroller = segue.destinationViewController as!ImageViewController
-        nextViewcontroller.isBlueStar = true
+        if segue.identifier == "blueStarSegue" {
+            nextViewcontroller.isBlueStar = true
+        }
+        else {
+            nextViewcontroller.isBlueStar = false
+        }
+        
         nextViewcontroller.title = sender?.currentTitle
     }
 }

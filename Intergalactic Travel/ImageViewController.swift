@@ -12,9 +12,18 @@ class ImageViewController: UIViewController {
     
     var isBlueStar:Bool?
 
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var imageStar: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if isBlueStar!{
+            self.view.backgroundColor = UIColor.blueColor()
+            imageStar.image = UIImage(named: "bluestar")
+        }
+        else{
+            self.view.backgroundColor = UIColor.redColor()
+            imageStar.image = UIImage(named: "reddwarf")
+        }
+        
 
     }
 }
